@@ -1,0 +1,91 @@
+html {
+    width: 100%;
+}
+main {
+    margin-left: 60px;
+    margin-right: 150px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 50px;
+    background-color: #1C1317;
+    opacity: 0.90;
+    transition: 1s;
+}
+.hidden {
+    opacity: 0;
+    display: none;
+    transition: opacity 1s linear;
+}
+.page { 
+    transition: opacity 1s linear;  
+    opacity: 1;
+}
+body {
+    /*background: linear-gradient(to left, #F0C27B, #4B1248); UNCOMMENT AND DELETE NEXT LINE TO USE GRADIENTS */
+    background: url("background3.jpg") no-repeat center center fixed; /*uncomment no-repeat if using jpg images instead of png*/
+    /*background-repeat: repeat; FOR PNG IMAGES ONLY */
+    background-size: cover; /* uncomment if using jpg images instead of png */
+    transition: background 1s linear;
+    font-family: 'Raleway', sans-serif;
+}
+/* preloads all images */
+body:after {
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content: url(background.jpg) url(background1.jpg) url(background2.jpg) url(background3.jpg) url(background4.jpeg) url(background5.jpeg) url(background6.jpeg) url(background7.jpeg); 
+}
+#homeLink {
+    color: #9FAFBF 
+}
+nav ul {
+    list-style: none;
+    padding: 0px;
+    font-weight: bold;
+}
+nav {
+    padding-bottom: 4px;
+    border-bottom: 2px solid #916852;
+}
+footer ul {
+    padding: 0px;
+    list-style: none;
+    color: #FFFFFF;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0px;
+    color: #916852; /* possible colours: dodgerblue, mediumseagreen, tomato, used with png images only */
+    transition: color 1s linear;
+}
+p {
+    font-size: 1.3em;
+    line-height: 1.4em;
+    color: #FFFFFF;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    margin-left: 25px;
+}
+footer {
+    border-top: 2px solid #916852;
+    font-size: .8em;
+}
+
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    list-style: none;
+}
