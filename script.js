@@ -1,8 +1,4 @@
 var background = [
-  /*"url(/css/1.png)", // uncomment to use subtle patterns alongside background images
-  "url(/css/2.png)", // would need to add respective name colours
-  "url(/css/3.png)",
-  "url(/css/4.png)",*/
   {link: "url(/css/background.jpg)", color: "#894264"},
   {link: "url(/css/background1.jpg)", color: "#93B6CC"},
   {link: "url(/css/background2.jpg)", color: "#9FAFBF"},
@@ -24,48 +20,50 @@ setInterval(function() {
 
 
 
-function showP(hash) {
-  hidePages();
-  document.querySelector("#page-" + hash).classList.remove("hidden");
-}
-
+//CODE FOR PAGE CHANGE AND TEXT TRANSITION
 function navClear() {
-  document.querySelector("#aboutLink").style.color = "#FFFFFF";
-  document.querySelector("#homeLink").style.color = "#FFFFFF";
+    document.querySelector("#aboutLink").style.color = "#FFFFFF";
+    document.querySelector("#homeLink").style.color = "#FFFFFF";
 }
 
 function navColor(link) {
-  document.querySelector(link).style.color = "#9FAFBF";
+    document.querySelector(link).style.color = "#9FAFBF";
 }
 
-var hidePages = function() { 
-    var container = document.querySelector(".container");
-    for (var i = 0; i < container.children.length; i++) {
-        var child = container.children[i];
-        child.classList.add("hidden");
-    }
-};
+//function to select the id for easier manipulation (don't have to get id for each)
+function $(id){
+    return document.getElementById(id); 
+}
+
+//default shows the home page 
+$('page-').classList.add('clicked');
 
 var pages = {
-  "about": function(hash) { 
-    showP(hash);
-    navClear();
-    navColor("#aboutLink");
-  },
-  "" : function(hash) { 
-    showP(hash);
-    navClear();
-    navColor("#homeLink");
-  } 
+    "about": $("homeLink").addEventListener("click", function(event) {
+         navClear();
+         navColor("#homeLink");
+         $("page-about").classList.remove("clicked");
+         setTimeout( function() {
+            $("page-").classList.add("clicked");
+         }, 250);
+    }),
+    "": $("aboutLink").addEventListener("click", function(event) {
+         navClear();
+         navColor("#aboutLink");
+         $("page-").classList.remove("clicked");  
+         setTimeout( function() {
+             $("page-about").classList.add("clicked");
+         }, 250);
+    })
 };
+
 
 window.addEventListener("hashchange", function() {
   var hash = window.location.hash;
   hash = hash.slice(1); // Removes the # at the start of the hash to fit with function names
   
-  pages[hash](hash);
+  pages[hash];
 });
 
 window.dispatchEvent(new Event("hashchange"));
-
 

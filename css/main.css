@@ -13,12 +13,22 @@ main {
 }
 .hidden {
     opacity: 0;
-    display: none;
-    transition: opacity 1s linear;
 }
 .page { 
-    transition: opacity 1s linear;  
+    margin: 20px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: opacity 0.25s ease-in;
+    -moz-transition: opacity 0.25s ease-in;
+    -o-transition: opacity 0.25s ease-in;
+}
+.page.clicked {
     opacity: 1;
+}
+.container {
+    position: relative;
+    height: 140px;
 }
 body {
     /*background: linear-gradient(to left, #F0C27B, #4B1248); UNCOMMENT AND DELETE NEXT LINE TO USE GRADIENTS */
@@ -75,6 +85,8 @@ p {
     color: #FFFFFF;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
     margin-left: 25px;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 footer {
     border-top: 2px solid #916852;
