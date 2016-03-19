@@ -38,31 +38,25 @@ function $(id){
 //default shows the home page 
 $('page-').classList.add('clicked');
 
-var pages = {
-    "about": $("homeLink").addEventListener("click", function(event) {
-         navClear();
-         navColor("#homeLink");
-         $("page-about").classList.remove("clicked");
-         setTimeout( function() {
-            $("page-").classList.add("clicked");
-         }, 250);
-    }),
-    "": $("aboutLink").addEventListener("click", function(event) {
-         navClear();
-         navColor("#aboutLink");
-         $("page-").classList.remove("clicked");  
-         setTimeout( function() {
-             $("page-about").classList.add("clicked");
-         }, 250);
-    })
-};
-
 
 window.addEventListener("hashchange", function() {
   var hash = window.location.hash;
   hash = hash.slice(1); // Removes the # at the start of the hash to fit with function names
-  
-  pages[hash];
+    if (hash == "") {  
+        navClear();
+        navColor("#homeLink");
+        $("page-about").classList.remove("clicked");
+        setTimeout( function() {
+            $("page-").classList.add("clicked");
+        }, 250);
+    } else if (hash == "about") {
+        navClear();
+        navColor("#aboutLink");
+        $("page-").classList.remove("clicked");  
+        setTimeout( function() {
+            $("page-about").classList.add("clicked");
+        }, 250);
+    }
 });
 
 window.dispatchEvent(new Event("hashchange"));
