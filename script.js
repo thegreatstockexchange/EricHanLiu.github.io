@@ -38,26 +38,28 @@ function $(id){
 //default shows the home page 
 $('page-').classList.add('clicked');
 
+//function for page loading
+//(corresponding link with page, current page to clear, page to load) 
+function loadPage(link, pageRm, pageAdd) {
+    navClear();
+    navColor(link);
+    $(pageRm).classList.remove("clicked");
+    setTimeout(function() {
+        $(pageAdd).classList.add("clicked");
+    }, 250);
+};
+
 
 window.addEventListener("hashchange", function() {
   var hash = window.location.hash;
-  hash = hash.slice(1); // Removes the # at the start of the hash to fit with function names
+  hash = hash.slice(1); // Removes the # at the start of the hash to fit if statements
     if (hash == "") {  
-        navClear();
-        navColor("#homeLink");
-        $("page-about").classList.remove("clicked");
-        setTimeout( function() {
-            $("page-").classList.add("clicked");
-        }, 250);
+        loadPage("#homeLink", "page-about", "page-");
     } else if (hash == "about") {
-        navClear();
-        navColor("#aboutLink");
-        $("page-").classList.remove("clicked");  
-        setTimeout( function() {
-            $("page-about").classList.add("clicked");
-        }, 250);
+        loadPage("#aboutLink", "page-", "page-about");
     }
 });
 
+//So the home page will load on default page load
 window.dispatchEvent(new Event("hashchange"));
 
