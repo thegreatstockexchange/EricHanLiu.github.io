@@ -9,7 +9,6 @@ main {
     padding: 50px;
     background-color: #1C1317;
     opacity: 0.90;
-    transition: 1s;
 }
 .hidden {
     opacity: 0;
@@ -31,12 +30,12 @@ main {
     height: 140px;
 }
 body {
-    /*background: linear-gradient(to left, #F0C27B, #4B1248); UNCOMMENT AND DELETE NEXT LINE TO USE GRADIENTS */
-    background: url("background3.jpg") no-repeat center center fixed; /*uncomment no-repeat if using jpg images instead of png*/
-    /*background-repeat: repeat; FOR PNG IMAGES ONLY */
-    background-size: cover; /* uncomment if using jpg images instead of png */
-    transition: background 1s linear;
+    background: url("background3.jpg") no-repeat center center fixed; 
+    background-size: cover;
     font-family: 'Raleway', sans-serif;
+    -webkit-transition: background 1s ease-in;
+    -moz-transition: background 1s ease-in;
+    -o-transition: background 1s ease-in;
 }
 /* preloads all images */
 body:after {
@@ -76,7 +75,7 @@ a:hover {
 h1 {
     font-size: 2.5em;
     margin-bottom: 0px;
-    color: #916852; /* possible colours: dodgerblue, mediumseagreen, tomato, used with png images only */
+    color: #916852; 
     transition: color 1s linear;
 }
 p {
