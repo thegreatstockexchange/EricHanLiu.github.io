@@ -25,7 +25,6 @@ function $(id){
 
 //default shows the home paragraph
 $("p-home").classList.add("clicked");
-navColor("#home")
 generateName();
 
 //function for page loading
@@ -56,4 +55,5 @@ window.addEventListener("hashchange", function() {
 });
 
 //So the home page will load on default page load
-window.dispatchEvent(new Event("hashchange"));
+//doesn't work with current hash id setup
+//window.dispatchEvent(new Event("hashchange"));
