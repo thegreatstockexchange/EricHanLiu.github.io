@@ -55,5 +55,4 @@ window.addEventListener("hashchange", function() {
 });
 
 //So the home page will load on default page load
-//doesn't work with current hash id setup
-//window.dispatchEvent(new Event("hashchange"));
+window.dispatchEvent(new Event("hashchange"));
