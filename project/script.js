@@ -25,6 +25,7 @@ function $(id){
 
 //default shows the home paragraph
 $("p-home").classList.add("clicked");
+navColor("#home")
 generateName();
 
 //function for page loading
