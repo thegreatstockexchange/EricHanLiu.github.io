@@ -4,7 +4,7 @@ var background = [
   {link: "url(images/background2.jpg)", color: "#FFFFFF", text: "Quick Learner"},
   {link: "url(images/background3.jpg)", color: "#FFFFFF", text: "Individualistic"},
   {link: "url(images/background4.jpeg)", color: "#FFFFFF", text: "Disciplined"}, 
-  {link: "url(images/background5.jpeg)", color: "#FFFFFF", text: "Strong Willed"},
+  {link: "url(images/background5.jpeg)", color: "#FFFFFF", text: "Academically Qualified"},
 ];
 
 //Change background image to random choice every 7s
@@ -17,7 +17,6 @@ setInterval(function() {
 		document.getElementById("info").style.opacity = "1";
 	}, 1000);
 	background.push(background.shift());
-	alert(background[0])
 }, 7000);
 
 
