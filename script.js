@@ -8,10 +8,10 @@ var background = [
   {link: "url(images/background6.jpg)", color: "#FFFFFF", text: "Efficient Worker"},
 ];
 var i = 0;
-var j = 0;
+var j = 1;
 
 //Change background image to random choice every 7s
-document.getElementById("banner").style.background = background[2].link + " center / cover";
+document.getElementById("banner").style.background = background[0].link + " center / cover";
 setInterval(function() {
 	document.getElementById("banner").style.background = background[j].link + " center / cover";
 	document.getElementById("info").style.color = background[j].color;
