@@ -24,8 +24,7 @@ body {
 #info {
 	color: white;
 	position: absolute;
-	width: 30%;
-	margin: 0 35%;
+	width: 100%;
 	top: 45%;
 	text-align: center;
 	transition: color 1s ease-in;
