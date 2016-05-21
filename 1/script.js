@@ -1,12 +1,12 @@
 var background = [
-  {link: "url(/css/background.jpg)", color: "#894264"},
-  {link: "url(/css/background1.jpg)", color: "#93B6CC"},
-  {link: "url(/css/background2.jpg)", color: "#9FAFBF"},
-  {link: "url(/css/background3.jpg)", color: "#916852"},
-  {link: "url(/css/background4.jpeg)", color: "#6D8893"}, 
-  {link: "url(/css/background5.jpeg)", color: "#8A8A8A"},
-  {link: "url(/css/background6.jpeg)", color: "#636363"},
-  {link: "url(/css/background7.jpeg)", color: "#BBCAD0"},
+  {link: "url(css/background.jpg)", color: "#894264"},
+  {link: "url(css/background1.jpg)", color: "#93B6CC"},
+  {link: "url(css/background2.jpg)", color: "#9FAFBF"},
+  {link: "url(css/background3.jpg)", color: "#916852"},
+  {link: "url(css/background4.jpeg)", color: "#6D8893"}, 
+  {link: "url(css/background5.jpeg)", color: "#8A8A8A"},
+  {link: "url(css/background6.jpeg)", color: "#636363"},
+  {link: "url(css/background7.jpeg)", color: "#BBCAD0"},
 ];
 
 //Change background image to random choice every 7s
