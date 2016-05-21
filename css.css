@@ -76,7 +76,7 @@ span {
 	position: absolute;
 	right: 20px;
 	font-size: 12;
-	top: 37;
+	top: 37%;
 }
 /*Image preloader*/
 body:after {
