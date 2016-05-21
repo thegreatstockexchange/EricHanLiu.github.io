@@ -27,9 +27,13 @@ body {
 	position: absolute;
 	width: 30%;
 	margin: 0 35%;
-	top: 40%;
+	top: 43%;
 	text-align: center;
 	transition: color 1s ease-in;
+	font-size: 24px;
+	-webkit-transition: opacity 0.25s ease-in;
+    -moz-transition: opacity 0.25s ease-in;
+	transition: opacity 0.25s ease-in;
 	text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
 }
 #footer {
@@ -89,7 +93,7 @@ body:after {
 	color: white;
 }
 .link:hover {
-	color: black;
+	color: tomato;
 }
 #aboutP a, #projectsP a, #back a {
 	text-decoration: none;
@@ -107,4 +111,9 @@ p {
 h2 {
 	font-weight: normal;	
 }
+.clicked {
+	opacity: 1;
+}
+.hidden {
+	opacity: 0;
 }
