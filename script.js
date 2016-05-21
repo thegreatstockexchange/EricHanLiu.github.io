@@ -9,14 +9,15 @@ var background = [
 
 //Change background image to random choice every 7s
 setInterval(function() {
-	var chosenImage = Math.floor(Math.random() * 5);
-	document.getElementById("banner").style.background = background[chosenImage].link + " center / cover";
-	document.getElementById("info").style.color = background[chosenImage].color;
+	document.getElementById("banner").style.background = background[1].link + " center / cover";
+	document.getElementById("info").style.color = background[1].color;
 	document.getElementById("info").style.opacity = "0";
 	setTimeout(function() {
-		document.getElementById("info").innerHTML = background[chosenImage].text;
+		document.getElementById("info").innerHTML = background[1].text;
 		document.getElementById("info").style.opacity = "1";
 	}, 1000);
+	background.push(background.shift());
+	alert(background[0])
 }, 7000);
 
 
