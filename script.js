@@ -13,3 +13,11 @@ setInterval(function() {
   document.getElementById("banner").style.background = background[chosenImage].link + " center / cover";
   document.getElementById("info").style.color = background[chosenImage].color;
 }, 7000);
+
+
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 800);
+    return false;
+});

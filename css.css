@@ -60,6 +60,14 @@ body {
 	position: relative;
 	background-image: url("images/main.png");
 }
+#back {
+	position: absolute;
+	bottom: 50px;
+	width: 30%;
+	left: 35%;
+	text-align: center;
+}
+
 #top p {
 	padding-left: 20px;
 	color: white;
@@ -80,11 +88,11 @@ body:after {
 .link:hover {
 	color: black;
 }
-#aboutP a, #projectsP a {
+#aboutP a, #projectsP a, #back a {
 	text-decoration: none;
 	color: tomato;
 }
-#aboutP a:hover, #projectsP a:hover {
+#aboutP a:hover, #projectsP a:hover, #back a:hover {
 	text-decoration: underline;
 }
 #top a:hover {
