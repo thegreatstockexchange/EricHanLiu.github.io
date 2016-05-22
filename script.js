@@ -7,7 +7,7 @@ var background = [
   {link: "url(images/background5.jpg)", color: "#FFFFFF", text: "Academically Qualified"},
   {link: "url(images/background6.jpg)", color: "#FFFFFF", text: "Efficient Worker"},
 ];
-var i = 0;
+var i = -1;
 var j = 1;
 
 //Change background image to random choice every 7s
@@ -24,14 +24,18 @@ setInterval(function() {
 setInterval(function() {
 	document.getElementById("info").style.opacity = "0";
 	setTimeout(function() {
-		document.getElementById("info").innerHTML = background[i].text;
-		document.getElementById("info").style.opacity = "1";
+		if (i == -1) {
+			document.getElementById("info").innerHTML = background[0].text;
+		} else {
+			document.getElementById("info").innerHTML = background[i].text;
+			document.getElementById("info").style.opacity = "1";
+		}
 	}, 500);
 	i++;
 	if (i == 7) {
 		i = 0;
 	}
-}, 3500);
+}, 3000);
 
 $('a').click(function(){
     $('html, body').animate({
