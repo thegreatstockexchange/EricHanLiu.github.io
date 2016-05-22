@@ -31,7 +31,7 @@ setInterval(function() {
 	if (i == 7) {
 		i = 0;
 	}
-}, 3000);
+}, 3500);
 
 $('a').click(function(){
     $('html, body').animate({
