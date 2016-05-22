@@ -21,6 +21,7 @@ setInterval(function() {
 	}
 }, 7000);
 
+document.getElementById("info").innerHTML = background[i].text;
 setInterval(function() {
 	document.getElementById("info").style.opacity = "0";
 	setTimeout(function() {
