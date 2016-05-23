@@ -9,12 +9,14 @@ var background = [
 var text = [
 	"Distinguished Musician",
 	"Developing Programmer",
-	"Disciplined and Efficient Worker",
+	"Quick Learner",
+	"Efficient Worker",
+	"Disciplined",
+	"Academically Qualified",
 ];
 
-//randomize both lists on page load
+//randomize background on page load
 shuffle(background);
-shuffle(text);
 
 //Change background image to random choice every 7s
 document.getElementById("banner").style.background = background[0].link + " center / cover";
@@ -34,7 +36,7 @@ setInterval(function() {
 		document.getElementById("info").style.opacity = "1";
 	}, 500);
 	text.push(text.shift());
-}, 6000);
+}, 5000);
 
 $("a").click(function(){
     $('html, body').animate({
