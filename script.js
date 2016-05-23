@@ -2,19 +2,14 @@ var background = [
   {link: "url(images/background.jpg)", color: "#FFFFFF"},
   {link: "url(images/background1.jpg)", color: "#FFFFFF"},
   {link: "url(images/background2.jpg)", color: "#FFFFFF"},
-  {link: "url(images/background3.jpg)", color: "#FFFFFF"},
+  {link: "url(images/background3.jpeg)", color: "#FFFFFF"},
   {link: "url(images/background4.jpeg)", color: "#FFFFFF"}, 
   {link: "url(images/background5.jpg)", color: "#FFFFFF"},
-  {link: "url(images/background6.jpeg)", color: "#FFFFFF"},
 ];
 var text = [
 	"Distinguished Musician",
 	"Developing Programmer",
-	"Quick Learner",
-	"Individualistic",
-	"Disciplined",
-	"Academically Qualified",
-	"Efficient Worker",
+	"Disciplined and Efficient Worker",
 ];
 
 //randomize both lists on page load
@@ -39,7 +34,7 @@ setInterval(function() {
 		document.getElementById("info").style.opacity = "1";
 	}, 500);
 	text.push(text.shift());
-}, 4000);
+}, 6000);
 
 $("a").click(function(){
     $('html, body').animate({
