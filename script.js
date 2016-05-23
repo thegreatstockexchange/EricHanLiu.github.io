@@ -2,9 +2,10 @@ var background = [
   {link: "url(images/background.jpg)", color: "#FFFFFF"},
   {link: "url(images/background1.jpg)", color: "#FFFFFF"},
   {link: "url(images/background2.jpg)", color: "#FFFFFF"},
-  {link: "url(images/background3.jpeg)", color: "#FFFFFF"},
-  {link: "url(images/background4.jpeg)", color: "#FFFFFF"}, 
+  {link: "url(images/background3.jpg)", color: "#FFFFFF"},
+  {link: "url(images/background4.jpg)", color: "#FFFFFF"}, 
   {link: "url(images/background5.jpg)", color: "#FFFFFF"},
+  {link: "url(images/background6.jpg)", color: "#FFFFFF"},
 ];
 var text = [
 	"Distinguished Musician",
@@ -21,9 +22,9 @@ shuffle(background);
 //Change background image to random choice every 7s
 document.getElementById("banner").style.background = background[0].link + " center / cover";
 setInterval(function() {
-	document.getElementById("banner").style.background = background[1].link + " center / cover";
+	document.getElementById("banner").style.background = background[0].link + " center / cover";
 	//unused right now since all colours are white
-	document.getElementById("info").style.color = background[1].color;
+	document.getElementById("info").style.color = background[0].color;
 	background.push(background.shift());
 }, 7000);
 
@@ -32,7 +33,7 @@ document.getElementById("info").innerHTML = text[0];
 setInterval(function() {
 	document.getElementById("info").style.opacity = "0";
 	setTimeout(function() {
-		document.getElementById("info").innerHTML = text[1];
+		document.getElementById("info").innerHTML = text[0];
 		document.getElementById("info").style.opacity = "1";
 	}, 500);
 	text.push(text.shift());
