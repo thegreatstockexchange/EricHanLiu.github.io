@@ -33,10 +33,27 @@ setInterval(function() {
 	}
 }, 4000);
 
-$('a').click(function(){
+$("a").click(function(){
     $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 800);
     return false;
 });
+
+window.onscroll = function () {  
+	var ele = document.getElementById("about");
+	var a = document.body.scrollTop;
+	if (a > "400") {
+		document.getElementById("back").style.opacity = "1";
+		document.getElementById("back").style.position = "fixed";
+		document.getElementById("back").style.pointerEvents = "auto";
+	}
+	else {
+		document.getElementById("back").style.opacity = "0";
+		document.getElementById("back").style.pointerEvents = "none";
+	}
+};
+
+
+
 
