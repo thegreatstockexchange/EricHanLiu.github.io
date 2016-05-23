@@ -1,36 +1,44 @@
 var background = [
-  {link: "url(images/background.jpeg)", color: "#FFFFFF", text: "Distinguished Musician"},
-  {link: "url(images/background1.jpg)", color: "#FFFFFF", text: "Developing Programmer"},
-  {link: "url(images/background2.jpg)", color: "#FFFFFF", text: "Quick Learner"},
-  {link: "url(images/background3.jpg)", color: "#FFFFFF", text: "Individualistic"},
-  {link: "url(images/background4.jpeg)", color: "#FFFFFF", text: "Disciplined"}, 
-  {link: "url(images/background5.jpg)", color: "#FFFFFF", text: "Academically Qualified"},
-  {link: "url(images/background6.jpg)", color: "#FFFFFF", text: "Efficient Worker"},
+  {link: "url(images/background.jpg)", color: "#FFFFFF"},
+  {link: "url(images/background1.jpg)", color: "#FFFFFF"},
+  {link: "url(images/background2.jpg)", color: "#FFFFFF"},
+  {link: "url(images/background3.jpg)", color: "#FFFFFF"},
+  {link: "url(images/background4.jpeg)", color: "#FFFFFF"}, 
+  {link: "url(images/background5.jpg)", color: "#FFFFFF"},
+  {link: "url(images/background6.jpeg)", color: "#FFFFFF"},
 ];
-var i = 0;
-var j = 1;
+var text = [
+	"Distinguished Musician",
+	"Developing Programmer",
+	"Quick Learner",
+	"Individualistic",
+	"Disciplined",
+	"Academically Qualified",
+	"Efficient Worker",
+];
+
+//randomize both lists on page load
+shuffle(background);
+shuffle(text);
 
 //Change background image to random choice every 7s
 document.getElementById("banner").style.background = background[0].link + " center / cover";
 setInterval(function() {
-	document.getElementById("banner").style.background = background[j].link + " center / cover";
-	document.getElementById("info").style.color = background[j].color;
-	j++;
-	if (j == 7) {
-		j = 0;
-	}
+	document.getElementById("banner").style.background = background[1].link + " center / cover";
+	//unused right now since all colours are white
+	document.getElementById("info").style.color = background[1].color;
+	background.push(background.shift());
 }, 7000);
 
+//Change text every 4 seconds
+document.getElementById("info").innerHTML = text[0];
 setInterval(function() {
 	document.getElementById("info").style.opacity = "0";
 	setTimeout(function() {
-		document.getElementById("info").innerHTML = background[i].text;
+		document.getElementById("info").innerHTML = text[1];
 		document.getElementById("info").style.opacity = "1";
 	}, 500);
-	i++;
-	if (i == 7) {
-		i = 0;
-	}
+	text.push(text.shift());
 }, 4000);
 
 $("a").click(function(){
@@ -54,6 +62,13 @@ window.onscroll = function () {
 	}
 };
 
-
-
+function shuffle(a) {
+    var j, x, i;
+    for (i = a.length; i; i -= 1) {
+        j = Math.floor(Math.random() * i);
+        x = a[i - 1];
+        a[i - 1] = a[j];
+        a[j] = x;
+    }
+}
 
