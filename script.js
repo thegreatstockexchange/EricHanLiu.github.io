@@ -22,9 +22,9 @@ shuffle(background);
 //Change background image to random choice every 7s
 document.getElementById("banner").style.background = background[0].link + " center / cover";
 setInterval(function() {
-	document.getElementById("banner").style.background = background[0].link + " center / cover";
+	document.getElementById("banner").style.background = background[1].link + " center / cover";
 	//unused right now since all colours are white
-	document.getElementById("info").style.color = background[0].color;
+	document.getElementById("info").style.color = background[1].color;
 	background.push(background.shift());
 }, 7000);
 
