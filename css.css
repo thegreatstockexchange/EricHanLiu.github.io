@@ -51,7 +51,7 @@ body {
 	height: 90%; 
 	position: relative;
 	background-color: #FFFFFF;
-	box-shadow: 0px 5px 20px 5px black;
+	box-shadow: 0px 5px 20px 10px black;
 }
 #aboutP, #projectsP {
 	position: absolute;
