@@ -22,7 +22,7 @@
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'https://erichanliu.github.io/blog';
+$config['base_url'] = '';
 
 /*
 |--------------------------------------------------------------------------
