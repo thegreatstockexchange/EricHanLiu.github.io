@@ -1,0 +1,46 @@
+body html {
+    background-color: #DBFFFD;
+    padding: 0;
+    margin: 0;
+}
+* {
+    font-family: 'Raleway', sans-serif;
+}
+.navbar {
+    transition: opacity 0.25s ease-in;
+}
+form {
+    margin-top: 10px;
+}
+.row {
+    padding: auto;
+}
+#toTop {
+    position: fixed;
+    opacity: 0;
+    right: 10%;
+    bottom: 10%;
+    transition: opacity 0.25s ease-in;
+}
+.navbar-header {
+    transition: color 0.25s ease-in;
+}
+#title {
+    transition: color 0.25s ease-in;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: tomato;
+}
+.container {
+    padding-bottom: 60px;
+}
+#commentText {
+    font-family: Raleway, sans-serif;
+    margin: auto;
+}
+.icon {
+    margin-top: 40%;
+}
