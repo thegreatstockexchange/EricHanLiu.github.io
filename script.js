@@ -47,8 +47,12 @@ $("a").click(function(){
 });
 
 window.onscroll = function () {  
-	var ele = document.getElementById("about");
 	var a = document.body.scrollTop;
+	if (a > "10") {
+		document.getElementById("top").style.opacity = "0.5";
+	} else {
+		document.getElementById("top").style.opacity = "1";
+	}
 	if (a > "400") {
 		document.getElementById("back").style.opacity = "1";
 		document.getElementById("back").style.position = "fixed";
