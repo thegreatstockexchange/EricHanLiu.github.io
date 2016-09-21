@@ -51,7 +51,7 @@ window.onscroll = function () {
 	if (a > "10") {
 		document.getElementById("top").style.opacity = "0.5";
 	} else {
-		document.getElementById("top").style.opacity = "1";
+		document.getElementById("top").style.opacity = "0.8";
 	}
 	if (a > "400") {
 		document.getElementById("back").style.opacity = "1";
