@@ -92,7 +92,7 @@ span {
 /*Image preloader*/
 body:after {
     position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-    content: url("images/background.jpeg") url("images/main.png") url("images/background1.jpg") url("images/background2.jpg") url("images/background3.jpg") url("images/background4.jpeg") url("images/background5.jpeg") url("images/background6.jpg") url("images/background7.jpg");
+    content: url("images/background.jpg") url("images/main.png") url("images/background1.jpg") url("images/background2.jpg") url("images/background3.jpg") url("images/background4.jpg") url("images/background5.jpg") url("images/background6.jpg");
 }
 .link, #top a{
 	text-decoration: none;
