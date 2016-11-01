@@ -68,10 +68,9 @@ body {
 }
 #projects {
 	width: 100%;
-	height: 0;
+	height: 110%;
 	position: relative;
 	background-image: url("images/main.png");
-	padding-top: 50%;
 }
 #back {
 	position: absolute;
@@ -116,7 +115,7 @@ body:after {
 	color: tomato;
 }
 p {
-	margin-right: 40%;
+	margin-right: 20%;
 }
 .clicked {
 	opacity: 1;
