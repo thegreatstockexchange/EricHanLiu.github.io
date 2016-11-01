@@ -66,14 +66,9 @@ body {
 	left: 15%;
 	top: 15%;
 }
-#wrap {
-	height: 3000px;
-	width: 100%;
-	position: relative;
-}
 #projects {
 	width: 100%;
-	height: auto;
+	height: 1000px;
 	position: relative;
 	background-image: url("images/main.png");
 }
