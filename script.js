@@ -9,11 +9,11 @@ var background = [
 ];
 var text = [
 	"Distinguished Musician",
+	"Academically Credentialed",
 	"Developing Programmer",
 	"Quick Learner",
 	"Efficient Worker",
 	"Disciplined",
-	"Academically Qualified",
 ];
 
 //randomize background on page load
