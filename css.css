@@ -1,13 +1,7 @@
-@font-face {
-	font-family: "Raleway script=all rev=1", "Adobe Blank";
-	font-style: normal;
-	font-weight: 200;
-	src: url("https://fonts.gstatic.com/l/font?kit=I5MF30QpOfwcEFSm0AQwtsVTM-kQr8TSfbErujJnB4HvYo6e1UZvvVTVwjUqDDe47WU4NRX61oJWqQiCKKz2TB8pbM5sndgetBwYhcw9igFGzn8iC_SrKQsTfHpL0EAc9tnRANLPZ6HCd2Auq1MZFyNEnHBrtOFVodPL2jTQJJkyR34mOXwutMwjc7Sl3QlUe_bNhtzEjv_rZHt1GNM1OQ&skey=282f34f0dd9ad023&v=v11");
-}	
 
 body {
 	margin: 0;
-	font-family: 'Raleway', serif !important;
+	font-family: 'Ubuntu', serif;
 }
 
 #banner {
