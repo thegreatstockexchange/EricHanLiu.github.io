@@ -1,6 +1,6 @@
 var background = [
   {link: "url(images/background.jpg)", color: "#FFFFFF"},
-  //{link: "url(images/background1.jpg)", color: "#FFFFFF"},
+  {link: "url(images/background1.jpg)", color: "#FFFFFF"},
   {link: "url(images/background2.jpg)", color: "#FFFFFF"},
   {link: "url(images/background3.jpg)", color: "#FFFFFF"},
   {link: "url(images/background4.jpg)", color: "#FFFFFF"}, 
