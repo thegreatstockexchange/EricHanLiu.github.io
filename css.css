@@ -46,7 +46,6 @@ body {
 	width: 100%;
 	top: 45%;
 	text-align: center;
-	transition: color 1s ease-in;
 	font-size: 180%;
 	-webkit-transition: opacity 0.25s ease-in;
     -moz-transition: opacity 0.25s ease-in;
