@@ -32,6 +32,12 @@ body {
 	top: 50%;
 	transform: translateY(-50%); 
 }
+@media screen and (max-width: 600px) {
+	#collapse {
+		visibility: hidden;
+		display: none;
+	}
+}
 #links {
 	position: absolute;
 	top: 50%;
