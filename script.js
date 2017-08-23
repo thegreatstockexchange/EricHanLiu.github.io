@@ -8,12 +8,10 @@ var background = [
   {link: "url(images/background6.jpg)", color: "#FFFFFF"},
 ];
 var text = [
-	"Distinguished Musician",
+	"Accomplished & Distinguished Musician",
 	"Academically Credentialed",
-	"Developing Programmer",
-	"Quick Learner",
-	"Efficient Worker",
-	"Disciplined",
+	"Avid Programmer",
+	"Efficient Worker"
 ];
 
 //randomize background on page load
