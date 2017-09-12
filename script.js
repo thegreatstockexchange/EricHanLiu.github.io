@@ -1,6 +1,6 @@
 var background = [
   {link: "url(images/background.jpg)", color: "#FFFFFF"},
-  //{link: "url(images/background1.jpg)", color: "#FFFFFF"},
+  {link: "url(images/background1.jpg)", color: "#FFFFFF"},
   {link: "url(images/background2.jpg)", color: "#FFFFFF"},
   {link: "url(images/background3.jpg)", color: "#FFFFFF"},
   {link: "url(images/background4.jpg)", color: "#FFFFFF"}, 
@@ -8,12 +8,10 @@ var background = [
   {link: "url(images/background6.jpg)", color: "#FFFFFF"},
 ];
 var text = [
-	"Distinguished Musician",
+	"Accomplished & Distinguished Musician",
 	"Academically Credentialed",
-	"Developing Programmer",
-	"Quick Learner",
-	"Efficient Worker",
-	"Disciplined",
+	"Avid Programmer",
+	"Efficient Worker"
 ];
 
 //randomize background on page load

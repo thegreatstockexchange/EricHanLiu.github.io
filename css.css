@@ -25,11 +25,18 @@ body {
 }
 #topp {
 	color: white;
+	font-size: 110%;
 	font-weight: bold;
 	padding-left: 1%;
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%); 
+}
+@media screen and (max-width: 600px) {
+	#collapse {
+		visibility: hidden;
+		display: none;
+	}
 }
 #links {
 	position: absolute;
@@ -45,7 +52,6 @@ body {
 	width: 100%;
 	top: 45%;
 	text-align: center;
-	transition: color 1s ease-in;
 	font-size: 180%;
 	-webkit-transition: opacity 0.25s ease-in;
     -moz-transition: opacity 0.25s ease-in;
@@ -94,7 +100,7 @@ body {
 /*Image preloader*/
 body:after {
     position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-    content: url("images/background.jpg") url("images/main.png") url("images/background2.jpg") url("images/background3.jpg") url("images/background4.jpg") url("images/background5.jpg") url("images/background6.jpg");
+    content: url("images/background.jpg") url("images/main.png") url("images/background2.jpg") url("images/background3.jpg") url("images/background4.jpg") url("images/background5.jpg") url("images/background6.jpg") url("images/background1.jpg");
 }
 .link, #top a{
 	text-decoration: none;
