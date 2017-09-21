@@ -83,6 +83,25 @@ body {
 	background-color: #FFFFFF;
 	box-shadow: 0px 5px 20px 10px black;
 }
+.bear {
+	position: absolute;
+	background: url(images/polarbearspritesheet.png);
+	width: 116px;
+	height: 60px;
+	left: 0%;
+	bottom: 10%;
+}
+@keyframes walk {
+	from { background-position: 0px; }
+	to { background-position: -832px; }
+}
+@keyframes walkacross {
+  from { transform: translate(0, 0); }
+  to { transform: translate(90vw, 0px); }
+}
+.animated {
+  animation: walk .8s steps(7) infinite, walkacross 12s linear infinite;
+}
 #projects {
 	position: relative;
 	width: 100%;
