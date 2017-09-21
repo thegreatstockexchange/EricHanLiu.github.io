@@ -88,7 +88,7 @@ body {
 	background: url(images/polarbearspritesheet.png);
 	width: 116px;
 	height: 60px;
-	left: 0%;
+	left: -10%;
 	bottom: 10%;
 }
 @keyframes walk {
@@ -97,10 +97,10 @@ body {
 }
 @keyframes walkacross {
   from { transform: translate(0, 0); }
-  to { transform: translate(90vw, 0px); }
+  to { transform: translate(100vw, 0px); }
 }
 .animated {
-  animation: walk .8s steps(7) infinite, walkacross 12s linear infinite;
+  animation: walk 1.2s steps(7) infinite, walkacross 12s linear infinite;
 }
 #projects {
 	position: relative;
