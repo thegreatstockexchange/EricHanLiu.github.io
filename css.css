@@ -103,17 +103,6 @@ body {
 .animated {
 	animation: walk 1s steps(8) infinite, walkacross 20s linear infinite;
 }
-.bear2 {
-	position: absolute;
-	background: url(images/frontbear.png);
-	width: 90px;
-	height: 70px;
-	right: 3%;
-	top: 10%;
-}
-.animated2 {
-	animation: walk 1s steps(8) infinite;
-}
 #projects {
 	position: relative;
 	width: 100%;
