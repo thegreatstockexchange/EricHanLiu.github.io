@@ -16,7 +16,7 @@ body {
 #top {
 	position: fixed;
 	z-index: 11;
-	height: 6%;
+	height: 7%;
 	width: 100%;
 	background-color: #1C1317;
 	opacity: 0.8;
@@ -25,7 +25,7 @@ body {
 }
 #topp {
 	color: white;
-	font-size: 110%;
+	font-size: 100%;
 	font-weight: bold;
 	padding-left: 2%;
 	position: relative;
@@ -52,7 +52,7 @@ body {
 	width: 100%;
 	top: 45%;
 	text-align: center;
-	font-size: 180%;
+	font-size: 160%;
 	font-weight: bold;
 	-webkit-transition: opacity 0.25s ease-in;
     -moz-transition: opacity 0.25s ease-in;
@@ -70,24 +70,33 @@ body {
 	font-size: 110%;
 	text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
 }
-#aboutP, #projectsP {
-	position: absolute;
-	padding: 10%;
-	font-size: 110%;
+#aboutP {
+	position: relative;
+	padding: 7%;
+	padding-bottom: 4%;
+	font-size: 105%;
 }
 #projectsP {
+	position: relative;
+	padding: 7%;
+	font-size: 105%;
 	background-image: url("images/main.png");
 }
 #about {
-	height: 90%; 
+	width: 100%;
 	position: relative;
 	background-color: #FFFFFF;
 	box-shadow: 0px 5px 20px 10px black;
 }
+#bear {
+	position: relative;
+	background-color: #FFFFFF;
+	height: 70px;
+}
 .bear {
 	position: absolute;
 	background: url(images/walkingbear.png);
-	width: 116px;
+	width: 116px; 
 	height: 70px;
 	left: -10%;
 	bottom: 10%;
@@ -101,7 +110,7 @@ body {
 	to { transform: translate(100vw, 0px); }
 }
 .animated {
-	animation: walk 1s steps(8) infinite, walkacross 20s linear infinite;
+	animation: walk 1s steps(8) infinite, walkacross 18s linear infinite;
 }
 #projects {
 	position: relative;
