@@ -11,7 +11,6 @@ var text = [
 	"Accomplished & Distinguished Musician",
 	"Academically Credentialed",
 	"Avid Programmer",
-	"Efficient Worker"
 ];
 
 //randomize background on page load
