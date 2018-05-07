@@ -1,4 +1,5 @@
-var background = [
+//background images, color specifies the text list's color, deactivated feature for now
+var background = [ 
   {link: "url(images/background.jpg)", color: "#FFFFFF"},
   {link: "url(images/background1.jpg)", color: "#FFFFFF"},
   {link: "url(images/background2.jpg)", color: "#FFFFFF"},
@@ -7,6 +8,7 @@ var background = [
   {link: "url(images/background5.jpg)", color: "#FFFFFF"},
   {link: "url(images/background6.jpg)", color: "#FFFFFF"},
 ];
+//text that displays on background images on main window
 var text = [
 	"Accomplished & Distinguished Musician",
 	"Academically Credentialed",
@@ -36,6 +38,7 @@ setInterval(function() {
 	text.push(text.shift());
 }, 5000);
 
+//scroll back to top of page
 $("a").click(function(){
     $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
@@ -43,6 +46,7 @@ $("a").click(function(){
     return false;
 });
 
+//change info header opacity on scroll 
 window.onscroll = function () {  
 	var a = document.body.scrollTop;
 	if (a > "10") {
