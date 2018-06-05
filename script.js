@@ -12,7 +12,7 @@ var background = [
 var text = [
 	"Accomplished & Distinguished Musician",
 	"Academically Credentialed",
-	"Avid Programmer",
+	"Avid Software Developer",
 ];
 
 //randomize background on page load
