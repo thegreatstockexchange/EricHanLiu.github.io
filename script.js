@@ -10,13 +10,14 @@ var background = [
 ];
 //text that displays on background images on main window
 var text = [
-	"Accomplished & Distinguished Musician",
+	"Distinguished Musician",
 	"Academically Credentialed",
-	"Avid Software Developer",
+	"Adept Programmer",
 ];
 
-//randomize background on page load
+//randomize background and text on page load
 shuffle(background);
+shuffle(text);
 
 //Change background image to random choice every 7s
 document.getElementById("banner").style.background = background[0].link + " center / cover";
