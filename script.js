@@ -11,8 +11,8 @@ var background = [
 //text that displays on background images on main window
 var text = [
 	"Distinguished Musician",
-	"Academically Credentialed",
 	"Adept Programmer",
+	"Academically Credentialed"
 ];
 
 //randomize background and text on page load
