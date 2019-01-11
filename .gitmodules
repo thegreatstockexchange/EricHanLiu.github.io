@@ -1,0 +1,3 @@
+[submodule "shopify-challenge"]
+	path = shopify-challenge
+	url = https://github.com/erichanliu/shopify-challenge
