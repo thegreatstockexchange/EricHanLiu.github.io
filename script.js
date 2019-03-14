@@ -9,7 +9,7 @@ let background = [
 // text that displays on background images on main window
 let text = [
 	"Adept Software Developer",
-    "Highly Distinguished Musician"
+    "Distinguished Musician"
 ];
 
 // randomize background on page load
