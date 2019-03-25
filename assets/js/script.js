@@ -47,7 +47,7 @@ function attachTopBarListeners()
 		let top = document.getElementById("top");
 		let back = document.getElementById("back");
 		if (a > "20") {
-			top.style.opacity = "0.5";
+			top.style.opacity = "0.3";
 		} else {
 			top.style.opacity = "0.8";
 		}
