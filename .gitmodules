@@ -1,3 +1,6 @@
 [submodule "shopify-challenge"]
 	path = shopify-challenge
 	url = https://github.com/erichanliu/shopify-challenge
+[submodule "circles.js"]
+	path = circles.js
+	url = https://github.com/EricHanLiu/circles.js
