@@ -6,8 +6,12 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
-.tab:hover {
+.tab:hover, a.navbar-item:hover {
     background-color: navajowhite;
+}
+
+.tab {
+    border-radius: 5%;
 }
 
 #profileImage {
@@ -22,8 +26,15 @@ body {
     transform: translateY(-50%);
 }
 
+.center-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
 a {
-    color: #cc4b93;
+    color: #dc4e76;
 }
 
 a:hover {
