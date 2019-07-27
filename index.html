@@ -3,30 +3,33 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>Eric Liu</title>
     <link rel="stylesheet" href="/assets/css/bulma.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/all.min.js"></script>
     <script defer src="/assets/js/scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
-<section class="hero is-fullheight">
+<div class="hero is-fullheight">
     <!-- Hero head: will stick at the top -->
     <div class="hero-head">
         <header class="navbar has-shadow is-spaced">
             <div class="container">
                 <div class="navbar-brand">
-                    <a class="navbar-item">
-                        <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+                    <a class="navbar-item" href="/">
+                        <img src="/assets/images/logo.jpg" alt="Logo">
                     </a>
                 </div>
                 <div class="navbar-menu">
                     <div class="navbar-end">
-                        <a class="navbar-item">
-                            <div class="icon"><i class="fas fa-paste has-text-info"></i></div>
+                        <a class="navbar-item" href="/assets/cv.html" target="_blank">
+                            <div class="icon"><i class="fas fa-paste has-text-danger"></i></div>
                             <p>CV</p>
                         </a>
-                        <a class="navbar-item">
+                        <a class="navbar-item" href="https://github.com/erichanliu" target="_blank">
                             <div class="icon"><i class="fab fa-github has-text-primary"></i></div>
                             <p>GitHub</p>
                         </a>
@@ -36,52 +39,138 @@
         </header>
     </div>
     <div class="hero-body">
-        <div class="container has-text-centered">
-            <h1 class="title is-4">
-                Hi, I'm Eric.
-            </h1>
-            <h2 class="subtitle is-6">
-                I'm a professional software developer currently based out of Montreal.
-            </h2>
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-half">
+                    <div class="columns">
+                        <div class="column is-one-third">
+                            <div class="has-text-centered">
+                                <img src="/assets/images/eric_profile.jpg" alt="Profile" id="profileImage"
+                                     data-aos="zoom-in">
+                            </div>
+                        </div>
+                        <div class="column is-two-thirds" style="position: relative;">
+                            <div id="profileText">
+                                <h1 class="title is-3" data-aos="fade-right">
+                                    Hi, I'm Eric.
+                                </h1>
+                                <h2 class="subtitle is-5" data-aos="fade-right">
+                                    I'm a professional software developer currently based out of Montreal.
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="hero-foot">
         <nav class="tabs is-centered">
             <div class="container">
                 <ul>
-                    <li><a>
+                    <li class="tab"><a href="#aboutMe">
                         <div class="icon is-small"><i class="fas fa-male"></i></div>
                         About Me
                     </a></li>
-                    <li><a>
+                    <li class="tab"><a href="#projects">
                         <div class="icon is-small"><i class="fas fa-layer-group"></i></div>
                         Projects
+                    </a></li>
+                    <li class="tab"><a href="#performances">
+                        <div class="icon is-small"><i class="fas fa-guitar"></i></div>
+                        Performances
                     </a></li>
                 </ul>
             </div>
         </nav>
     </div>
-</section>
-<section class="section has-background-light">
-    <div class="container">
-        <p class="title is-4">About Me</p>
-        <p>I am a McGill Computer Science student (class of '20) with a minor in Economics. I am interested in
-            specializing in AI, machine learning, and computational finance.</p>
-        <p>I currently work at <a href="https://www.makeitbloom.com/" target="_blank">Bloom Search Marketing</a> as a
-            Software Developer.
-        <p>I went to Marianopolis College for CEGEP, studied a music DEC and took extra math courses (outside my
-            program's courseload) to fulfill my pre-reqs for McGill. I was on the Dean's List and maintained a 34+
-            R-Score with 8 courses every semester. While at Marianopolis, I played in numerous McGill ensembles and
-            orchestras; feel free to take a look at my <a href="#performances">performances</a>! </p>
-        <p>I'm fluent in English and French, and familiar with Mandarin. </p>
-        <p>Take a look at my <a href="/assets/cv/cv.html" target="_blank">CV</a> for more information on my
-            qualifications and experience. Or, feel free to shoot me an email at <a>ericliu404@gmail.com</a>!</p>
+</div>
+<div class="hero is-light is-fullheight" id="aboutMe">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8 is-offset-2">
+                    <h1 class="title is-3" data-aos="fade-right">
+                        About Me
+                    </h1>
+                    <div class="content">
+                        <p data-aos="fade-right">I am a McGill Computer Science student (class of '20) with a minor in
+                            Economics. I am interested in specializing in AI, machine learning, and computational
+                            finance. I currently work at
+                            <a href="https://www.makeitbloom.com/" target="_blank">Bloom Digital Marketing</a>
+                            as a Software Developer.
+                        <p data-aos="fade-right">I went to Marianopolis College for CEGEP, studied a music DEC and took
+                            extra math courses (outside my program's courseload) to fulfill my pre-reqs for McGill. I
+                            was on the Dean's List and maintained a 34+ R-Score with 8 courses every semester. While at
+                            Marianopolis, I played in numerous McGill ensembles and orchestras; feel free to take a look
+                            at my <a href="#performances">performances</a>! </p>
+                        <p data-aos="fade-right">I'm fluent in English and French, and familiar with Mandarin. Take a
+                            look at my <a href="/assets/cv/cv.html" target="_blank">CV</a> for more information on my
+                            qualifications and experience, or feel free to shoot me an email at
+                            <a>ericliu404@gmail.com</a>!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</section>
-<section class="section">
-    <div class="container">
-        <p class="title is-4">Projects</p>
+</div>
+<div class="hero is-fullheight" id="projects">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8 is-offset-2">
+                    <h1 class="title is-3" data-aos="fade-left" style="text-align: right;">
+                        Projects
+                    </h1>
+                    <div class="columns is-multiline" data-aos="fade-left">
+                        <div class="column is-4">
+                            <div class="box">
+                                <h5 class="title is-5">
+                                    <a href="/circles.js">Circles.js</a>
+                                </h5>
+                                <p>A small browser based game built using only JavaScript.</p>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="box">
+                                Test
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="box">
+                                Test
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</section>
+</div>
+<div class="hero is-light is-fullheight" id="performances">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8 is-offset-2">
+                    <h1 class="title is-3" data-aos="fade-right">
+                        Performances
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
+
+<script src="/assets/js/jquery.min.js"></script>
+<script>
+    $(document).ready(() => {
+        $('.fadein-img').css('opacity', '1');
+        setTimeout(() => {
+            $('.fadein').css('opacity', '1');
+        }, 500);
+
+        AOS.init();
+    });
+</script>
 </html>
