@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="/assets/images/logo.png"/>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/all.min.js"></script>
     <script defer src="/assets/js/scripts.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -20,7 +21,7 @@
             <div class="container">
                 <div class="navbar-brand">
                     <a class="navbar-item" href="/">
-                        <div class="icon"><i class="fas fa-laptop-code fa-2x"></i></div>
+                        <img src="/assets/images/logo.png">
                     </a>
                 </div>
                 <div class="navbar-menu">
@@ -42,19 +43,21 @@
         <div class="container">
             <div class="columns is-centered">
                 <div class="column is-half">
-                    <div class="columns">
+                    <div class="columns is-vcentered">
                         <div class="column is-one-third">
                             <div class="has-text-centered">
                                 <img src="/assets/images/eric_profile.jpg" alt="Profile" id="profileImage"
                                      data-aos="zoom-in" data-aos-delay="500" data-aos-duration="800">
                             </div>
                         </div>
-                        <div class="column is-two-thirds" style="position: relative;">
+                        <div class="column is-two-thirds">
                             <div id="profileText">
-                                <h1 class="title is-3" data-aos="fade-right" data-aos-delay="500" data-aos-duration="800">
+                                <h1 class="title is-3" data-aos="fade-right" data-aos-delay="500"
+                                    data-aos-duration="800">
                                     Hi, I'm Eric.
                                 </h1>
-                                <h2 class="subtitle is-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                                <h2 class="subtitle is-5" data-aos="fade-right" data-aos-duration="1000"
+                                    data-aos-delay="500">
                                     I'm a software developer currently based out of Montreal.
                                 </h2>
                             </div>
@@ -85,15 +88,15 @@
         </nav>
     </div>
 </div>
-<div class="hero is-fullheight" id="aboutMe" style="background-color: #F4F9F9;">
+<div class="hero is-fullheight" id="aboutMe" style="background-color: #f8dfe4;">
     <div class="hero-body">
         <div class="container">
             <div class="columns">
                 <div class="column is-8 is-offset-2">
-                    <h1 class="title is-3" data-aos="fade-right">
+                    <h1 class="title is-3" data-aos="zoom-in">
                         About Me
                     </h1>
-                    <div class="columns" data-aos="fade-left">
+                    <div class="columns is-vcentered" data-aos="fade-left">
                         <div class="column is-9">
                             <div class="box">
                                 <p>
@@ -103,13 +106,13 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="column is-3" style="position: relative;">
-                            <i class="fas fa-graduation-cap fa-4x center-icon" style="color: #35375a;"></i>
+                        <div class="column is-3 has-text-centered">
+                            <i class="fas fa-graduation-cap fa-4x" style="color: #35375a;"></i>
                         </div>
                     </div>
-                    <div class="columns" data-aos="fade-right">
-                        <div class="column is-3" style="position: relative;">
-                            <i class="fas fa-guitar fa-4x center-icon" style="color: #dc4e76;"></i>
+                    <div class="columns is-vcentered" data-aos="fade-right">
+                        <div class="column is-3 has-text-centered">
+                            <i class="fas fa-university fa-4x" style="color: #dc4e76;"></i>
                         </div>
                         <div class="column is-9">
                             <div class="box">
@@ -118,6 +121,12 @@
                                     extra math courses to fulfill my pre-reqs for McGill. I was on the Dean's List and
                                     maintained a 34+ R-Score with 8 courses every semester.
                                 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns is-vcentered" data-aos="fade-left">
+                        <div class="column is-9">
+                            <div class="box">
                                 <p>
                                     While at Marianopolis, I played
                                     in numerous McGill ensembles and orchestras; feel free to take a look at my
@@ -125,20 +134,8 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="columns" data-aos="fade-left">
-                        <div class="column is-9">
-                            <div class="box">
-                                <p>
-                                    I'm fluent in English and French, and familiar with
-                                    Mandarin. Take a look at my <a href="/assets/cv/index.html" target="_blank">CV</a> for
-                                    more information on my qualifications and experience, or feel free to shoot me an
-                                    email at <a>ericliu404@gmail.com</a>!
-                                </p>
-                            </div>
-                        </div>
-                        <div class="column is-3" style="position: relative;">
-                            <i class="fas fa-mail-bulk fa-4x center-icon" style="color: #cc4b93;"></i>
+                        <div class="column is-3 has-text-centered">
+                            <i class="fas fa-guitar fa-4x" style="color: #cc49b3;"></i>
                         </div>
                     </div>
                 </div>
@@ -151,7 +148,7 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8 is-offset-2">
-                    <h1 class="title is-3" data-aos="fade-left" style="text-align: right;">
+                    <h1 class="title is-3" data-aos="zoom-in">
                         Projects
                     </h1>
                     <p data-aos="fade-right">
@@ -159,13 +156,13 @@
                         Marketing</a>, where I develop a variety of agency tools. I've also worked on a number of open
                         source projects, some of which I've showcased below.
                     </p>
-                    <div class="columns is-multiline" data-aos="fade-left" style="margin-top: 1em;">
+                    <div class="columns is-multiline is-vcentered" data-aos="fade-left" style="margin-top: 1em;">
                         <div class="column is-4">
                             <div class="box">
                                 <h5 class="title is-5">
                                     <a href="/circles.js" target="_blank">Circles.js</a>
                                 </h5>
-                                <p>A small browser based game built using only JavaScript.</p>
+                                <p>A small browser based game built using only JavaScript</p>
                             </div>
                         </div>
                         <div class="column is-4">
@@ -176,7 +173,7 @@
                                     </a>
                                 </h5>
                                 <p>
-                                    A web-based document viewer optimized for high-resolution images.
+                                    A web-based document viewer optimized for high-resolution images
                                 </p>
                             </div>
                         </div>
@@ -187,24 +184,49 @@
                                         IIIF v3.0 AV Player
                                     </a>
                                 </h5>
-                                <p>A IIIF v3.0 compatible A/V score-synced media player.</p>
+                                <p>A IIIF v3.0 compatible A/V score-synced media player</p>
                             </div>
                         </div>
+                        <div class="column is-4">
+                            <div class="box">
+                                <h5 class="title is-5">
+                                    <a href="https://github.com/EricHanLiu/quotes" target="_blank">
+                                        Quotes
+                                    </a>
+                                </h5>
+                                <p>A Python script to display inspirational Twitter quotes on your monitor</p>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="box">
+                                <h5 class="title is-5">
+                                    <a href="https://github.com/EricHanLiu/twelve-tone-scale" target="_blank">
+                                        TTS
+                                    </a>
+                                </h5>
+                                <p>A Python script to generate and manipulate
+                                    <a href="https://en.wikipedia.org/wiki/Twelve-tone_technique">twelve-tone scales</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column is-4 has-text-centered">
+                            <a href="https://github.com/EricHanLiu" target="_blank">
+                                <div class="icon"><i class="fab fa-github fa-4x"></i></div>
+                                <p>More of my projects can be found on my GitHub</p>
+                            </a>
+                        </div>
                     </div>
-                    <p data-aos="fade-right">
-                        More of my projects can be found on my <a href="https://github.com/EricHanLiu">GitHub</a>.
-                    </p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="hero is-fullheight" id="performances" style="background-color: #FFE6E6;">
+<div class="hero is-fullheight" id="performances">
     <div class="hero-body">
         <div class="container">
             <div class="columns">
                 <div class="column is-8 is-offset-2">
-                    <h1 class="title is-3" data-aos="fade-right">
+                    <h1 class="title is-3" data-aos="zoom-in">
                         Performances
                     </h1>
                     <p data-aos="fade-right">I've developed an extensive portfolio of professional
@@ -223,7 +245,8 @@
                         <div class="column is-6">
                             <div class="box">
                                 <h5 class="title is-5">
-                                    <a href="https://www.youtube.com/watch?v=EQT3tDs1NY4&feature=youtu.be" target="_blank">
+                                    <a href="https://www.youtube.com/watch?v=EQT3tDs1NY4&feature=youtu.be"
+                                       target="_blank">
                                         Bonneau - Caprice
                                     </a>
                                 </h5>
@@ -233,7 +256,8 @@
                         <div class="column is-6">
                             <div class="box">
                                 <h5 class="title is-5">
-                                    <a href="https://www.dropbox.com/s/71s6zont44fw8aa/McGill%20sax%20studio%202016-11-6_Eric.mov?usg=AFQjCNEzSg_cOWKf3wsokROj1V6LonHmzQ&source=gmail&dl%3D0=&ust=1481423457482000" target="_blank">
+                                    <a href="https://www.dropbox.com/s/71s6zont44fw8aa/McGill%20sax%20studio%202016-11-6_Eric.mov?usg=AFQjCNEzSg_cOWKf3wsokROj1V6LonHmzQ&source=gmail&dl%3D0=&ust=1481423457482000"
+                                       target="_blank">
                                         Glazunov - Concerto
                                     </a>
                                 </h5>
