@@ -20,10 +20,24 @@ body {
     box-shadow: 0 0 0 3px hsl(0, 0%, 100%), 0 0 0 6px hsl(0, 0%, 90%);
 }
 
+#aboutMe {
+    box-shadow: 0 1px 10px 5px rgb(250, 200, 200);
+}
+
 a {
     color: #dc4e76;
 }
 
 a:hover {
     color: #35375a;
+}
+
+#backToTopArrow {
+    position: fixed;
+    right: 5vh;
+    bottom: 5vh;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+    pointer-events: none;
 }

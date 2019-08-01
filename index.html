@@ -14,6 +14,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
+<div id="backToTopArrow" class="icon"><a><i class="fas fa-arrow-alt-circle-up fa-2x"></i></a></div>
 <div class="hero is-fullheight">
     <!-- Hero head: will stick at the top -->
     <div class="hero-head">
@@ -41,8 +42,8 @@
     </div>
     <div class="hero-body">
         <div class="container">
-            <div class="columns is-centered">
-                <div class="column is-half">
+            <div class="columns is-vcentered">
+                <div class="column is-6 is-offset-2">
                     <div class="columns is-vcentered">
                         <div class="column is-one-third">
                             <div class="has-text-centered">
@@ -63,6 +64,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="column is-4" style="margin-top: 4em;" data-aos="fade-left" data-aos-delay="500">
+                    <img src="/assets/images/step_to_the_sun.svg">
                 </div>
             </div>
         </div>
@@ -88,11 +92,11 @@
         </nav>
     </div>
 </div>
-<div class="hero is-fullheight" id="aboutMe" style="background-color: #f8dfe4;">
+<div class="hero is-fullheight is-light" id="aboutMe">
     <div class="hero-body">
         <div class="container">
             <div class="columns">
-                <div class="column is-8 is-offset-2">
+                <div class="column">
                     <h1 class="title is-3" data-aos="zoom-in">
                         About Me
                     </h1>
@@ -144,10 +148,10 @@
     </div>
 </div>
 <div class="hero is-fullheight" id="projects">
-    <div class="hero-body">
+    <div class="hero-body" style="padding-bottom: 0;">
         <div class="container">
-            <div class="columns">
-                <div class="column is-8 is-offset-2">
+            <div class="columns is-vcentered">
+                <div class="column is-8">
                     <h1 class="title is-3" data-aos="zoom-in">
                         Projects
                     </h1>
@@ -209,7 +213,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="column is-4 has-text-centered">
+                        <div class="column is-4 has-text-centered" style="margin-top: 1em;">
                             <a href="https://github.com/EricHanLiu" target="_blank">
                                 <div class="icon"><i class="fab fa-github fa-4x"></i></div>
                                 <p>More of my projects can be found on my GitHub</p>
@@ -217,20 +221,26 @@
                         </div>
                     </div>
                 </div>
+                <div class="column is-4" style="margin-top: 8em;" data-aos="zoom-in">
+                    <img src="/assets/images/art.svg">
+                </div>
             </div>
         </div>
     </div>
 </div>
 <div class="hero is-fullheight" id="performances">
-    <div class="hero-body">
+    <div class="hero-body" style="padding-top: 0;">
         <div class="container">
-            <div class="columns">
-                <div class="column is-8 is-offset-2">
-                    <h1 class="title is-3" data-aos="zoom-in">
+            <div class="columns is-vcentered">
+                <div class="column is-4" data-aos="zoom-in" style="margin-top: 4em;">
+                    <img src="/assets/images/before_dawn.svg">
+                </div>
+                <div class="column is-8">
+                    <h1 class="title is-3 has-text-right" data-aos="zoom-in">
                         Performances
                     </h1>
-                    <p data-aos="fade-right">I've developed an extensive portfolio of professional
-                        performances. Here are a few of my favorites!</p>
+                    <p data-aos="fade-right" class="has-text-right">I've developed an extensive portfolio of
+                        professional performances. Here are a few of my favorites!</p>
                     <div class="columns is-multiline" data-aos="fade-left" style="margin-top: 1em;">
                         <div class="column is-6">
                             <div class="box">
@@ -294,6 +304,29 @@
 
         AOS.init({
             duration: 700,
+        });
+
+        let threshold = $(window).height() / 2;
+        let $backToTopArrow = $('#backToTopArrow');
+
+        if ($(document).scrollTop() > threshold) {
+            $backToTopArrow.css('opacity', '1');
+            $backToTopArrow.css('pointer-events', 'auto');
+        }
+
+        $(document).scroll(function () {
+            let scroll = $(this).scrollTop();
+            if (scroll > threshold) {
+                $backToTopArrow.css('opacity', '1');
+                $backToTopArrow.css('pointer-events', 'auto');
+            } else {
+                $backToTopArrow.css('opacity', '0');
+                $backToTopArrow.css('pointer-events', 'none');
+            }
+        });
+
+        $backToTopArrow.click(() => {
+            $(document).scrollTop(0);
         });
     });
 </script>
