@@ -4,6 +4,8 @@ html {
 
 body {
     font-family: 'Rubik', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .tab:hover, a.navbar-item:hover {
